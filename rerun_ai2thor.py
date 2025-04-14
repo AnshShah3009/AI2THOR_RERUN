@@ -161,10 +161,10 @@ def log_trajectory(json_path, base_dir):
                 f"world/camera/{i}/rgb",
                 rr.Image(rgb_image),  # .compress(jpeg_quality=20)
             )
-            rr.log(
-                f"world/camera/{i}/depth",
-                rr.DepthImage(depth_image),  # .compress(jpeg_quality=20)
-            )
+            # rr.log(
+            #     f"world/camera/{i}/depth",
+            #     rr.DepthImage(depth_image),  # .compress(jpeg_quality=20)
+            # )
             print(f"Logged camera intrinsics: {camera_pinhole}")
             print(
                 f"Logged camera intrinsics (w={w}, h={h}, f=({fx:.2f},{fy:.2f}), c=({cx:.1f},{cy:.1f}))"
